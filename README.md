@@ -1,8 +1,8 @@
-# My Python Learning Repository
+# Python solves
 
 Welcome to my Python learning repository! 
 
-This repository is a collection of Python projects and scripts that I've created as I've learned the language. It's organized by domain, making it easy to find examples and projects related to specific areas of Python development.
+This repository is a collection of mini Python projects and scripts that I've created as I've learned the language. It's organized by domain, making it easy to find examples and projects related to specific areas of Python development.
 
 ## Structure
 

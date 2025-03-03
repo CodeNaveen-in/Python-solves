@@ -31,8 +31,8 @@ To run the scripts in this repository, you'll need Python installed on your syst
 1.  **Clone the repository:**
 
     ```bash
-    git clone [repository URL]
-    cd [repository name]
+    git clone https://github.com/CodeNaveen-in/Python-solves
+    cd Python-solves
     ```
 
 2.  **Create a virtual environment (recommended):**

@@ -7,6 +7,7 @@
 import random
 card_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 players = {}
+player_scores = {}
 
 def addcard(name):
     card = random.choice(card_list)
@@ -43,20 +44,6 @@ def cardSum(player):
     return score
 
 def playTurn(player):
-    score = cardSum(player)
-    choice = input(f"\nDo you want to add a card {player}? y or n\t:")
-    if (choice == 'y'):
-        addcard(player)
-        score = cardSum(player)
-        print (f"Your deck is {players[player]} and score is {score}")
-        if (score > 21):
-            return score
-        return playTurn(player)
-    elif (choice =="n"):
-        return score
-
-""" GOOD REVIEW.. (as it shows updated score, returns on no, asks only if score less than 21 [better than my stack builder])
-def playTurn(player):
     while True:
         score = cardSum(player)
         print(f"{player}'s hand: {players[player]} | Score: {score}")
@@ -66,25 +53,37 @@ def playTurn(player):
         if choice == "y":
             addcard(player)
         elif choice in ["n", ""]:
-            return score"""
+            return score
         
 print("\nWelcome to the game of BLACKJACK..")
 print("Rules are \n1. You get 2 cards at first \n2. You can choose to have more cards or not \n3. The goal is to get closest to 21 without going over.")
 
 add_player()
 
-active_p = list(players.keys())
-for player in active_p:
+for player in players:
     score = playTurn(player)    
-    if (player == "Dealer"):
-        while cardSum(player) < 17:
-            addcard(player)
-    else:
+    if (player != "Dealer"):
+        player_scores[player] = score
         if (score == 21):
             print(f"Wooho.. You've WON this BLACKJACK GAME {player} with a blackjack {score}.")
         elif (score > 21):
             print(f"Player {player} has gone busted")
-    active_p.remove(player)
     print(f"The Score of {player} is {score}")
     no_dealer_show()
+
+while (cardSum("Dealer") < 17):
+    addcard("Dealer")
+d_score = cardSum("Dealer")
+
+for player, score in player_scores.items():
+    if (player != "Dealer"):
+        if (score > 21):
+            print(f"Sorry {player} has BUSTED with score of {score} and cards : {players[player]}")
+        elif (score == 21 and score > d_score) or (score > d_score):
+            print(f"Congratulations {player} has WON the this BLACKJACK GAME {score} and cards : {players[player]}")
+        elif (score == 21 == d_score):
+            print(f"Sorry {player} has made TIE with score of {score} and cards : {players[player]}")
+        elif (d_score > score):
+            print(f"Sorry {player} has LOST from dealer with score of {score} and cards : {players[player]}")
+
 print(players)

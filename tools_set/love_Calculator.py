@@ -1,3 +1,14 @@
+print(r"""
+    .--------------------.
+   |  FEBRUARY 29?       |
+   |--------------------|
+   |  Year: ____         |
+   |  Leap? [Yes/No]     |
+   '--------------------'
+     🗓️ Leap Year Checker
+      Leapin' logic 🐸
+""")
+
 def calculate_love_score(name1, name2):
     d1_list= ["t", "r", "u", "e"]
     d2_list= ["l", "o", "v", "e"]

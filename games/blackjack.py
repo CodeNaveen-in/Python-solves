@@ -5,6 +5,14 @@
 #TODO 5. if any player bust they are out and stand so are they locked in
 
 import random
+print(r"""
+     .------.   .------.
+    |A_  _ | | |10 /\ |
+    |( \/ )| | | ♠♠  |    ♠️ BLACKJACK
+    | \  / | | |     |    Beat the dealer!
+    |  \/ A| | |____10|
+     `------'   `------'
+""")
 card_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 players = {}
 player_scores = {}

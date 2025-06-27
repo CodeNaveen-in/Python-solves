@@ -1,3 +1,14 @@
+print(r"""
+      _______
+     /  ___  \ 🔍
+    |  | P |  |
+    |  | R |  |   Prime Checker
+    |  | I |  |   Inspecting integers...
+     \_| M |_/
+        | |
+       (___)
+""")
+
 def primeCheck(num):
     if (num <2):
         return f"NOPE! Not a prime {num} is not prime"

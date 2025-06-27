@@ -1,14 +1,12 @@
-logo = '''
-  ____                 _            _   _             
- / ___|___  _ __  ___ | |_ ___  ___| |_| |_ ___ _ __  
-| |   / _ \| '_ \/ __|| __/ _ \/ __| __| __/ _ \ '__| 
-| |__| (_) | | | \__ \| ||  __/\__ \ |_| ||  __/ |    
- \____\___/|_| |_|___/ \__\___||___/\__|\__\___|_|    
-
-      >>> Secret Auction Program <<<'''
-
-print(logo)
-print("\n\n Give secret bids and win the auction with highest bid!!!")
+print(r"""
+       ________
+      |________|)🔨    SECRET AUCTION
+       \ $$$$ /        Enter your bids
+        \____/         Highest wins—secretly!
+        |____|
+        |    |
+        |____|
+""")
 
 player_data ={}
 gameover = False

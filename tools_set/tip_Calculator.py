@@ -1,3 +1,13 @@
+print(r"""
+    /---'''---\      💸 TIP CALC
+   /___________\     =============
+   | Total: ₹520|  
+   | Tip:   ₹78 |
+   | Final:₹598 |
+   \__________/   
+      ⎺⎺⎺⎺⎺⎺      
+""")
+
 #Greet the user
 print("Hello User, Welcome to the BILL CALCULATOR")
 

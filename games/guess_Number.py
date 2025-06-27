@@ -1,4 +1,11 @@
 import random
+print(r"""
+   🤔 I'M THINKING OF A NUMBER
+  ┌──────────────────────────┐
+  │ 1   2   3   4   5   6   ?│
+  └──────────────────────────┘
+     Can you guess it? 🔍
+""")
 print("Hey Hey join in fot number guess.. \n-5 chance on hard and 10 on easy \n-Below or above 5 nums is deemed high")
 low_num = int(input("Enter low range number :"))
 high_num = int(input("Enter the high range number :")) + 1

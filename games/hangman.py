@@ -1,4 +1,14 @@
 import random
+print(r"""
+   +---+
+   |   |     ☠️ HANGMAN
+   O   |     Guess or swing...
+  /|\  |     
+  / \  |     
+       |
+  =========
+""")
+
 word_list = ["tree", "rain", "branch", "forest", "ecosystem"]
 chosen = random.choice(word_list)
 lives = len(chosen)

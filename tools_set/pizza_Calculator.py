@@ -1,3 +1,14 @@
+print(r"""
+        ,--.
+     ,-'_ /|\\
+    /  /_| \\\\
+ __|   /__\_\\\___
+\o o)/     o o  o)
+ \_/  🍕  Pizza Calc
+    (o)   x   x
+     \_________/
+   Calculate your cheesy cravings!
+""")
 #Greet user
 print("Hello Dear User... WELCOME to PIZZERIA !")
 

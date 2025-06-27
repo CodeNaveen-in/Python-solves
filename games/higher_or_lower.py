@@ -3,6 +3,16 @@
 #TODO 3. If choice is correct increase score and continue else complete the game and present the score
 
 import random 
+print(r"""
+      ▲
+     ▲ ▲      HIGH OR LOW 🎯
+   ▲     ▲    
+  ▼     ▼
+   ▼   ▼
+    ▼ ▼
+     ▼
+ Guess if the next is ↑ or ↓!
+""")
 internet_personalities = {
     "MrBeast": [250_000_000, "YouTuber known for philanthropy", "United States"],
     "Khaby Lame": [160_000_000, "Silent comedy TikTok creator", "Italy"],

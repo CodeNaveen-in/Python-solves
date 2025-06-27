@@ -1,4 +1,13 @@
 #TODO: 1. Setting all the set of characters
+print(r"""
+   _______________________
+  |                       |
+  |   🏛️ CAESAR CIPHER     |
+  |   Shift: +13          |
+  |   Message: Encrypted  |
+  |_______________________|
+      Decode the ancient!
+""")
 #Characters
 lowercase_letters = [chr(i) for i in range(ord('a'), ord('z') + 1)]
 uppercase_letters = [chr(i) for i in range(ord('A'), ord('Z') + 1)]

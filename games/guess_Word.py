@@ -1,5 +1,12 @@
 import random
+print(r"""
+  🧠 WORD GUESS
 
+   _ _ _ _ _ 
+  [W][O][R][D]
+  Can you find the hidden word?
+  One letter at a time…
+""")
 ai_domains = {
     "Healthcare AI": ["diagnosis", "scan", "patient", "disease", "treatment"],
     "Agriculture AI": ["tractor", "drone", "weather", "crop", "soil"],
@@ -34,7 +41,6 @@ def hint5():
 key_n = random.choice(list(ai_domains))
 chosen = random.choice(ai_domains[key_n])
 
-print(" Welcome to the WORD GUESS game... ")
 print("Rules are simple.. \n-You have 10 chance to guess it \n-Using hints eats up 20 points")
 print("So are you ready?...")
 print(key_n, "and the chosen word is ", chosen)

@@ -2,6 +2,14 @@
 import random
 
 #greet the user
+print(r"""
+     ✊ ROCK
+     🖐 PAPER
+     ✌ SCISSORS
+
+   Let the battle begin!
+    ➤ Python Edition 🐍
+""")
 print("\nHello USER, welcome to the ROCK, PAPER, SCISSOR game")
 
 #get options

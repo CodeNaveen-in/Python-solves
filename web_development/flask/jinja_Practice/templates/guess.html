@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>A warm welcome to you {{ jin_name.capitalize() }} </h1>
+    <p>We think your <b>age </b> should be {{ jin_age }}</p>
+    <p> and your <b>gender</b> should be {{ jin_gender }}</p>
+</body>
+</html>

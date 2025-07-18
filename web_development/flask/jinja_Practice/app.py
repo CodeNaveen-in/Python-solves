@@ -8,7 +8,6 @@ load_dotenv()
 
 app=Flask(__name__)
 
-ran_num = randint(1,10)
 date = datetime.date.today()
 name = "Naveen Garg"
 gen_api = os.getenv("GENDERISE_API")
@@ -16,6 +15,7 @@ agi_api = os.getenv("AGIFY_API")
 
 @app.route("/")
 def hello():
+    ran_num = randint(1,10) #corrected as previously it was unrouted so wasn't changing
     return render_template("index.html", num=ran_num, date=date, name=name)
 
 @app.route("/guess/<name>")

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>All Cafes</h2>
+<table class="table table-striped">
+    {% for row in cafes %}
+    <tr>
+        {% for item in row %}
+        <td>
+            {% if item.startswith("http") %}
+                <a href="{{ item }}" target="_blank">Maps Link</a>
+            {% else %}
+                {{ item }}
+            {% endif %}
+        </td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

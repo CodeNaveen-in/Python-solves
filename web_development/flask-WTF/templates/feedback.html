@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>📝 Send Us Your Feedback</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="mb-3">{{ form.name.label }} {{ form.name(class="form-control") }}</div>
+    <div class="mb-3">{{ form.email.label }} {{ form.email(class="form-control") }}</div>
+    <div class="mb-3">{{ form.message.label }} {{ form.message(class="form-control", rows=4) }}</div>
+    <div>{{ form.submit(class="btn btn-primary") }}</div>
+</form>
+
+<hr>
+<h4>📬 Previous Feedback</h4>
+<ul class="list-group">
+    {% for fb in feedbacks %}
+    <li class="list-group-item">
+        <strong>{{ fb.name }}</strong> ({{ fb.email }})<br>
+        {{ fb.message }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Write or Vanish</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Write or Vanish</h1>
+        <p>Keep typing or your words will disappear in <span id="countdown">5</span> seconds!</p>
+        <textarea id="writer" placeholder="Start writing..."></textarea>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

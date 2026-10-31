@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<a href="{{ url_for('add') }}" class="btn btn-success mb-3">➕ Add Book</a>
+<table class="table table-striped">
+    <tr><th>Title</th><th>Author</th><th>Rating</th><th>Actions</th></tr>
+    {% for book in books %}
+    <tr>
+        <td>{{ book[1] }}</td>
+        <td>{{ book[2] }}</td>
+        <td>{{ book[3] }}</td>
+        <td>
+            <a href="{{ url_for('edit', book_id=book[0]) }}" class="btn btn-sm btn-primary">Edit</a>
+            <a href="{{ url_for('delete', book_id=book[0]) }}" class="btn btn-sm btn-danger">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
